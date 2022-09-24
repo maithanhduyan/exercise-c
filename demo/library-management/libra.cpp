@@ -1,18 +1,7 @@
 #include <iostream>
+#include "libra.h"
 
 using namespace std;
-/**
- * Khai bao bien
- */
-struct sach //
-{
-    int ma_sach;  // Ma sach
-    char ten[40]; // Ten sach
-    float gia;    // Gia sach
-};
-
-int so_luong_sach = 0; // So luong sach trong thu vien
-sach thu_vien[] = {};  // Mang cach sach co trong thu vien
 
 // ---------------------------------------------------------
 // a) Nhập danh sách gồm N cuốn sách
@@ -77,6 +66,7 @@ void tim_sach_nhi_phan()
     cout << "Nhap ma sach can tim \n";
     cin >> ma_sach_can_tim; // chua tim thay
 }
+
 // e) Xuất các cuốn sách có giá cao nhất (nếu có nhiều sách có giá cao nhất trùng nhau thì xuất hết ra màn hình).
 void hien_thi_sach_gia_cao_nhat()
 {
